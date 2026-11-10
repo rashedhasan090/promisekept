@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "promisekept"
+version = "0.1.0"
+description = "Check that the promises in your rebuttal actually landed in the revised LaTeX paper"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+authors = [{name = "Md Rashedul Hasan"}]
+
+[project.scripts]
+promisekept = "promisekept.cli:main"
+
+[tool.setuptools]
+packages = ["promisekept"]
